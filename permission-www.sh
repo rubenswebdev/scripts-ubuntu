@@ -1,9 +1,10 @@
 #!/bin/bash
+
 sudo groupadd www-pub
 sudo usermod -a -G www-pub root
-sudo usermod -a -G www-pub reinaldo
+sudo usermod -a -G www-pub $USER
 sudo usermod -a -G www-pub www-data
-sudo chown -R reinaldo:www-pub /var/www
+sudo chown -R $USER:www-pub /var/www
 sudo chmod 2775 /var/www
 sudo find /var/www -type d -exec chmod 2775 {} +
 sudo find /var/www -type f -exec chmod 0664 {} +
