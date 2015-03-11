@@ -23,8 +23,8 @@ pear channel-discover pear.pdepend.org
 pear install pdepend/PHP_Depend
 
 echo "Installing PHP Mess Detector"
-pear channel-discover pear.phpmd.org
-pear install phpmd
+curl http://static.phpmd.org/php/2.2.1/phpmd.phar -o "/usr/bin/phpmd"
+chmod +x "/usr/bin/phpmd"
 
 echo "Installing PHPcs Fixer"
 curl "http://get.sensiolabs.org/php-cs-fixer.phar" -o "/usr/local/bin/php-cs-fixer"
