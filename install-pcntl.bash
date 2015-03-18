@@ -4,6 +4,9 @@
 # Script para a habilitação do módulo pcntl do php
 #
 
+#execute automatic with sudo
+sudo -v 
+
 if [ "$EUID" -ne 0 ]
   then echo "Rode com sudo, ou como root"
   exit
