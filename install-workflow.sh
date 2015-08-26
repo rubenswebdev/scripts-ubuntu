@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt-get install apache2 php5 php5-dev php5-mysql git git-flow ssh mysql-server curl mongodb php5-xdebug gitg
+sudo apt-get install apache2 php5 php5-dev php5-mysql php5-curl git git-flow ssh mysql-server curl mongodb php5-xdebug gitg
 sudo pear config-set php_ini /etc/php5/apache2/php.ini
 sudo pecl config-set php_ini /etc/php5/apache2/php.ini
 sudo pecl install mongo
