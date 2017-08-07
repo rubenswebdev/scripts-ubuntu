@@ -15,6 +15,7 @@ sudo apt-add-repository ppa:fish-shell/release-2
 
 sudo apt-get update
 sudo apt-get install -y mongodb-org nodejs fish
+sudo systemctl enable mongod.service
 
 sudo npm install grunt-cli -g
 sudo npm install -g pm2
