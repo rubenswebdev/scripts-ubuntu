@@ -24,7 +24,7 @@ ANDROID_SDK_PATH=~/android-sdk
 LINUX_ARCH="$(lscpu | grep 'Architecture' | awk -F\: '{ print $2 }' | tr -d ' ')"
 
 # Latest Android Linux SDK for x64 and x86 as of 02-06-2015
-ANDROID_SDK="https://dl.google.com/android/android-sdk_r24.0.2-linux.tgz"
+ANDROID_SDK="https://dl.google.com/android/android-sdk_r24.3.4-linux.tgz"
 
 #Desktop is default in linux English version, but in another language that folder not exist
 cd ~/
